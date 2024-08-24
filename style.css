@@ -1,0 +1,87 @@
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white !important;
+}
+
+.clock-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+
+#clock-card,
+#alarm-card {
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 30px 80px 10px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 8px;
+    width: 70%;
+    height: 20%;
+    background-color: lightcoral;
+}
+
+
+#clock-card .datetext {
+    padding: 35px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+#alarm-card {
+    padding: 25px;
+
+}
+
+#alarmClock {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+#clock-card .time-wrapper,
+#alarm-card .time-wrapper {
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#clock-card .common-card,
+#clock-card .seprator-card {
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+#clock-card .seprator-card {
+    height: 100px;
+    width: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    #clock-card,
+#alarm-card{
+    width: 100%;
+}
+
+}
